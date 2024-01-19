@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Condiciones</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <section class="containerImg">
+        <h3>Click sobre la Imagen</h3>
+        <img id="imgClick" src="assets/img/f1.png" alt="Logo F1" width="400px" height="200px">
+    </section>
+
+    <section class="containerStickers">
+        <h3>Puedes elejir 10 Sticker como maximo</h3>
+        <div class="divStickersPadre">
+        <div class="divStickers">
+            <img src="assets/img/redbull.jpeg" alt="" class="imgStickers"></img>
+            <input type="text" id="inputStickers01">
+        </div>
+        <div class="divStickers">
+            <img src="assets/img/box.jpeg" alt="" class="imgStickers"></img>
+            <input type="text" id="inputStickers02">
+        </div>        
+        <div class="divStickers">
+            <img src="assets/img/ferrari.jpeg" alt="" class="imgStickers"></img>
+            <input type="text" id="inputStickers03">
+        </div>
+        </div>  
+        <span id="spanStickers"></span>
+        <button id="buttonStickers">Verificar</button>
+    </section>
+    <section class="containerPassword">
+        <h3>Ingresa tu Codigo</h3>
+        <div class="divPassword">
+            <select name="codigo" id="codigo1">
+                <option value="0">0</option>
+            </select>
+            <select name="codigo" id="codigo2">
+                <option value="0">0</option>
+            </select>
+            <select name="codigo" id="codigo3">
+                <option value="0">0</option>
+            </select>
+        </div>
+        <button id="buttonPassword">Verificar</button>
+        <span id="spanPassword"></span>
+    </section>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
