@@ -5,11 +5,21 @@
 
 body{
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h3{
     margin-bottom: 20px;
     position: relative;
     text-align: center;
+}
+span{
+    margin: 10px;
+}
+select{
+    width: 50px;
+    margin-bottom: 15px;
 }
 .imgStickers{
     height: 130px;
@@ -27,6 +37,7 @@ h3{
 
 .divStickersPadre, .divPassword{
     display: flex;
+    width: 70%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -35,9 +46,10 @@ h3{
 .containerStickers, .containerPassword{
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
 
-.containerImg, .divStickers{
+.containerImg{
     flex-direction: column;
     align-items: center;
     padding: 0;
