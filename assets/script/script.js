@@ -1,4 +1,4 @@
-//Declaracion de variales y rutas
+// ---------------     Declaracion de variales y rutas    ---------------------
 const imgClick = document.getElementById('imgClick')
 
 const inputStickers01 = document.getElementById('inputStickers01')
@@ -13,7 +13,7 @@ const codigo3 = document.getElementById('codigo3')
 const spanPassword = document.getElementById('spanPassword')
 const buttonPassword = document.getElementById('buttonPassword')
 
-//Carga de option
+// ---------------     Carga de option en select    ---------------------
     for(i=1;i<=9;i++){ 
         let option1 = document.createElement("option");
         option1.text = i;
@@ -26,7 +26,7 @@ const buttonPassword = document.getElementById('buttonPassword')
         codigo3.add(option3);
      };
 
-//funciones Click
+// ---------------     Funcion Click sobre la imagen    ---------------------
 
 imgClick.addEventListener("click", function(e){
     if (imgClick.style.border == 'none'){
@@ -35,7 +35,7 @@ imgClick.addEventListener("click", function(e){
         imgClick.style.border = 'none';
 });
 
-// Funcion Click para Stickers
+// ---------------     Funcion Click para Stickers    ---------------------
 
 buttonStickers.addEventListener("click", function(e){
     let suma = Number(inputStickers01.value) + Number(inputStickers02.value) + Number(inputStickers03.value);
@@ -45,7 +45,7 @@ buttonStickers.addEventListener("click", function(e){
     spanStickers.innerHTML = "Llevas demasiados stickers, el limite es 10"; 
 });
 
-// Funcion Click para password
+// ---------------     Funcion Click para password    ---------------------
 
 buttonPassword.addEventListener("click", function(e){
     let password = codigo1.value + codigo2.value + codigo3.value;

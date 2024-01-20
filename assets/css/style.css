@@ -4,22 +4,28 @@
 }
 
 body{
-    background-color: aliceblue;
+    background-color: azure;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h3{
+
+h2{
     margin-bottom: 20px;
     position: relative;
     text-align: center;
 }
+
 span{
     margin: 10px;
 }
+
 select{
     width: 50px;
     margin-bottom: 15px;
+}
+.containerImg img{
+    border: none;
 }
 .imgStickers{
     height: 130px;
@@ -29,7 +35,9 @@ select{
 .containerImg, .containerStickers, .containerPassword{
     display: flex;
     justify-content: center;
-    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
     width: 600px;
     border: 2px solid black;
     margin-top: 10px;
@@ -43,21 +51,8 @@ select{
     justify-content: center;
     margin-bottom: 10px;
 }
-.containerStickers, .containerPassword{
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-}
 
-.containerImg{
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-button,
-button:focus {
+button, button:focus {
   width: 50%;
   font-size: 17px;
   padding: 10px 25px;
